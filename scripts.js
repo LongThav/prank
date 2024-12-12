@@ -1,6 +1,6 @@
 //click yes btn
 function clickYesButton() {
-    alert('I love you too O Pov<3');
+    alert('Love you 🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣');
 }
 
 //move button on hover
@@ -11,5 +11,4 @@ function hoverNoButton() {
 
     document.getElementById('no-button').style.left = x + 'px';
     document.getElementById('no-button').style.top = y + 'px';
-
 }
