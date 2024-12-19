@@ -1,14 +1,24 @@
-//click yes btn
-function clickYesButton() {
-    alert('Love you 🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣');
+// Function when hovering over the "NO" button
+function hoverNoButton() {
+    const noButton = document.getElementById("no-button");
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+
+    // Get the viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Generate random positions ensuring the button stays within the visible area
+    const randomX = Math.random() * (viewportWidth - buttonWidth);
+    const randomY = Math.random() * (viewportHeight - buttonHeight);
+
+    // Update the button's position
+    noButton.style.position = "absolute";
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
 }
 
-//move button on hover
-function hoverNoButton() {
-    // random from 0 to 1, then multiply with screen size
-    let x = Math.random() * window.innerWidth;
-    let y = Math.random() * window.innerHeight;
-
-    document.getElementById('no-button').style.left = x + 'px';
-    document.getElementById('no-button').style.top = y + 'px';
+// Function for "YES" button click
+function clickYesButton() {
+    alert("Yay! I love you too! ❤️");
 }
